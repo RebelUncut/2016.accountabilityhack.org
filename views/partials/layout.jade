@@ -1,0 +1,30 @@
+doctype html
+html
+
+    head
+        meta(charset='utf8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        script(src="https://use.typekit.net/stx0six.js")
+        script(type='text/javascript').
+            try{Typekit.load({ async: true });}catch(e){}
+        title Accountability Hack
+        != css()
+
+    body
+        header
+            ul
+                li: a.brand(href="http://accountabilityhack.org"): img(src="img/logos/ah.png")
+                li: a(href="http://accountabilityhack.org/") Home
+                //-li: a(href="http://accountabilityhack.org/pre") Pre-Event
+                li: a(href="http://accountabilityhack.org/personas") Users
+                li: a(href="http://accountabilityhack.org/conduct") Conduct
+                li: a(href="http://accountabilityhack.org/challenges") Challenges
+                //-li: a(href="http://accountabilityhack.org/submit") Submit Project
+
+        block content
+
+        script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+        script(src="js/magnific.js")
+        script(src="js/matchHeight.js")
+        != js()

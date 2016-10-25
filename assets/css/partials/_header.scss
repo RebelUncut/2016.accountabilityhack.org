@@ -1,0 +1,27 @@
+$header-spacing: 0.75em;
+
+header {
+	background: $accent;
+	font-size: 1em;
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	ul {
+		display: inline-block;
+		padding-left: 0;
+		margin: 0;
+		margin-left: $header-spacing / 2;
+		li {
+			display: inline-block;
+			a {
+				padding: $header-spacing $header-spacing / 2;
+				color: white;
+				display: block;
+			}
+			img {
+				height: 0.8rem;
+			}
+		}
+	}
+}

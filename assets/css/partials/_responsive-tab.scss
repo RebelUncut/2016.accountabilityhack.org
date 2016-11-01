@@ -1,28 +1,20 @@
 // Header
 
 	header {
-		a.brand {
-			display: block;
-			text-align: center;
+		.wrapper {
+			padding: 0;
 		}
-		ul {
-			background: $accent;
-			width: 100%;
-			text-align: center;
-			margin: 1em 0;
-			li {
-				a {
-					padding-top: 0;
+		nav {
+			flex-direction: column;
+			ul {
+				margin-top: 1em;
+				.top {
+					flex-direction: column;
 				}
-				&:first-child {
-					width: 100%;
-					margin-top: 1.5em;
-					margin-bottom: 1em;
-					img {
-						display: block;
-						height: 1.5em;
-						margin: 0 auto;
-					}
+				li {
+					margin-left: 0;
+					margin-right: 1em;
+					padding-bottom: 0.25em;
 				}
 			}
 		}

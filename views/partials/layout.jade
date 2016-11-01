@@ -12,15 +12,17 @@ html
         != css()
 
     body
-        header
-            ul
-                li: a.brand(href="http://accountabilityhack.org"): img(src="img/logos/ah.png")
-                li: a(href="http://accountabilityhack.org/") Home
-                //-li: a(href="http://accountabilityhack.org/pre") Pre-Event
-                li: a(href="http://accountabilityhack.org/personas") Users
-                li: a(href="http://accountabilityhack.org/conduct") Conduct
-                li: a(href="http://accountabilityhack.org/challenges") Challenges
-                //-li: a(href="http://accountabilityhack.org/submit") Submit Project
+        header: .wrapper
+            nav
+                a.brand(href="/"): img(src="/img/logos/ah-teal.png", alt="Accountability Hack 2016")
+                ul
+                    .top
+                        li: a(href="/") Home
+                        li: a(href="/personas") Personas
+                        li: a(href="/conduct") Conduct
+                        li: a(href="/challenges") Challenges
+                    .bottom
+                        li: a(href="http://rebellabs.co.uk", target="_blank") Accountability Hack 2016 is a Rebel Labs event
 
         block content
 

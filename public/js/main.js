@@ -13,7 +13,8 @@ $('a[href^="#"]').on('click',function (e) {
 
 $("#faq li, #challenges li, #data li, #venue .travel > *").matchHeight();
 
-$('#hero a.video').magnificPopup({ items: { src: 'https://www.youtube.com/watch?v=pfqh14ZaMfg' }, type: 'iframe' });
+$('.hero a.video-2014').magnificPopup({ items: { src: 'https://www.youtube.com/watch?v=pfqh14ZaMfg' }, type: 'iframe' });
+$('.hero a.video-2015').magnificPopup({ items: { src: 'https://www.youtube.com/watch?v=s2J4J4uJjk0' }, type: 'iframe' });
 
 $("#schedule nav h2").click(function() {
 	var clickedItem = $(this).attr("id");

@@ -1,11 +1,11 @@
 #about {
 	@include span-columns(12);
-	background: $accent;
+	background: lighten(lightgrey, 10%);
 	.content {
 		@include outer-container;
 		padding: 3rem;
 		text-align: center;
-		color: white;
+		color: $grey-dark;
 		font-size: 1.25em;
 	}
 }

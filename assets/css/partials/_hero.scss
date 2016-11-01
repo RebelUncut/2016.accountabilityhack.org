@@ -1,60 +1,43 @@
-#hero {
-	@include span-columns(12);
-	background: url(../img/hero.jpg) no-repeat center bottom scroll; 
+.hero {
+	background: linear-gradient(
+		to bottom, 
+		rgba($accent, 0.75),
+		rgba($accent, 0.75)), 
+		url("/img/hero-image.jpg");
 	background-size: cover;
-	padding: 3em;
-	min-height: 75vh;
-	position: relative;
-	.content {
-		@include span-columns(6 of 12);
+	background-position: center bottom;
+	width: 100%;
+	color: white;
+	padding: 6vmax 0;
+	.wrapper {
+		@include outer-container;
+		padding: 0 1em;
 	}
-	.box {
-		@include material-box;
-		background: white;
-		padding: 1.5em;
-		margin-bottom: 2em;
-		* {
-			color: $grey-dark;
-		}
+	h1, h2, h3 {
+		margin-bottom: 1rem;
+		line-height: 1.5;
 	}
 	h1 {
+		font-size: 3vmax;
+		line-height: 1.25;
 		text-transform: uppercase;
 	}
-	h2 {
-		margin-bottom: 0.25rem;
+	h2, h3 {
+		font-weight: normal;
+		font-size: 1.25rem;
 	}
-	p {
+	h3 {
 		margin-bottom: 0;
 	}
-	img.logo {
-		height: 3rem;
-		margin-bottom: 1rem;
-	}
-	a.register {
-		@include material-button;
-		font-size: 1.25em;
-		margin-right: 1.5em;
-		margin-bottom: 1.5em;
-	}
-	a.video {
-		font-size: 1.25em;
-		margin-bottom: 1.5em;
-		@include material-button($accent, white);
-	}
-	.credit {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		background: $secondary;
-		color: $grey-dark;
-		padding: 0.5em;
-	}
-}
-
-@media screen and (max-width: $desktop) {
-	#hero {
-		.content {
-			@include span-columns(8 of 12);
+	.buttons {
+		margin-top: 0.5em;
+		a {
+			@include button($accent, white);
+			cursor: pointer;
+			margin-top: 1em;
+			&.focus {
+				@include button($grey-dark, $secondary);
+			}
 		}
 	}
 }

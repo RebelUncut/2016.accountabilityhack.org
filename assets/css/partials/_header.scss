@@ -1,27 +1,49 @@
-$header-spacing: 0.75em;
-
 header {
-	background: $accent;
-	font-size: 1em;
-	a {
-		text-decoration: none;
-		text-transform: uppercase;
+	background: white;
+	padding: 1em;
+	box-shadow: 0 2px 2px rgba(black, 0.5);
+	width: 100%;
+	display: fixed;
+	.wrapper {
+		@include outer-container;
+		padding: 0 1em;
+	}
+	nav {
+		display: flex;
+		flex-direction: row;
+	}
+	a.brand img {
+		height: 4rem;
+		margin-right: 1em;
 	}
 	ul {
-		display: inline-block;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 0;
+		margin-bottom: 0;
 		padding-left: 0;
-		margin: 0;
-		margin-left: $header-spacing / 2;
-		li {
-			display: inline-block;
+		.top {
+			display: flex;
+			flex-dirction: row;
 			a {
-				padding: $header-spacing $header-spacing / 2;
-				color: white;
-				display: block;
-			}
-			img {
-				height: 0.8rem;
+				text-transform: uppercase;
+				font-weight: bold;
 			}
 		}
+		li {
+			list-style-type: none;
+			margin-left: 1em;
+		}
+		.bottom {
+			margin-bottom: 0.125em;
+			margin-top: 0.25em;
+			a {
+				color: $accent;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
 	}
 }

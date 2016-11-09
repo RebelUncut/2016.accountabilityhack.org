@@ -5,7 +5,7 @@ block content
 	.hero: .wrapper
 		h1 Accountability Hack is your chance to impact the democratic process through technology.
 		h2 Now in it's sixth year, Accountability Hack is a two day event for the UK Civic Tech community to connect, learn from each other and impact the UK's democratic process using technology and open government data.
-		h3 The hackathon will take place on November 19 - 20 2016 in London.
+		h3 The hackathon will take place on November 19 - 20 2016 at the National Audit Office in London.
 		.buttons
 			a.focus(href="#register") Register for the hackathon
 			a.video-2015 2015's video
@@ -62,13 +62,13 @@ block content
 		h1 Sponsors & Partners
 		ul
 			li
-				img(src="img/logos/ukp.png")
+				img(src="img/logos/pds.png")
 				h2 UK Parliament
-				.content: p The UK Parliament are one of the three main partners running this event. 
-			//-li
+				.content: p Back once again it's the Parliamentary Digital Service, our main event partner and oldest AccHack friend. 
+			li
 				img(src="img/logos/nao.png")
 				h2 National Audit Office
-				.content: p The National Audit Office are once again providing their lovely venue and technical expertise.
+				.content: p The National Audit Office return for 2016, bringing with them their perfect venue and valued tech expertise.
 			//-li
 				img(src="img/logos/ons.png") 
 				h2 Office for National Statistics
@@ -207,8 +207,8 @@ block content
 					p This collection brings together all documents relating to HMT Treasury minutes released between 2010 to 2015.
 	section#venue
 		h1 Where
-		h2 Central London - Exact venue TBC
-		//-.travel
+		h2 National Audit Office
+		.travel
 			.trains
 				h2 Trains
 				p Victoria Station
@@ -223,7 +223,7 @@ block content
 			#gmap_canvas img{max-width:none!important;background:none!important}
 			a#get-map-data.google-map-code(href='http://www.themecircle.net') themecircle.net
 		script(type='text/javascript').
-			function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(51.4995,-0.1332999999999629),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions); google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+			function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(51.4984603,-0.14361729999995987),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.4984603, -0.14361729999995987)});infowindow = new google.maps.InfoWindow({content:"<b>National Audit Office</b><br/>Buckingham Palace Road<br/>SW1W 0PP London" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
 
 	section#slack: .wrapper
 		h1 Join the UKGovCamp Slack Channel
